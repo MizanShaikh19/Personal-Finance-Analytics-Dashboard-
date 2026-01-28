@@ -25,6 +25,13 @@ finance-fullstack-pro/
 # IDEs
 .vscode/
 .idea/
+.gemini/
+
+# Debug & Logs
+push_log.txt
+git_debug.txt
+git_status.txt
+git_debug.txt
 
 # OS
 .DS_Store
