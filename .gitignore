@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+.eslintcache
+
+# Project Specific
+.tmp/
+*.pdf
+*.csv
+
+# Exclude Docs as requested
+PRD.md
+TRD.md
+DRD.md
+finance-fullstack-pro/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-sm p-6 transition-all hover:border-text-secondary/30;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-sm font-medium transition-opacity hover:opacity-90 disabled:opacity-50;
+  }
+  
+  .btn-secondary {
+    @apply border border-border text-text-primary px-4 py-2 rounded-sm font-medium transition-all hover:bg-surface disabled:opacity-50;
+  }
+
+  .input-minimal {
+    @apply bg-transparent border-b border-border py-2 focus:border-primary outline-none transition-colors text-text-primary placeholder:text-text-secondary/50;
+  }
+}
+
+/* Custom Scrollbar for Minimalism */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full hover:bg-text-secondary/30;
+}
